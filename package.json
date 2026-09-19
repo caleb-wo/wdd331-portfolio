@@ -2,7 +2,7 @@
   "name": "wdd331-portfolio",
   "version": "1.0.0",
   "description": "Portfolio site for BYU–I class WDD331: Advanced CSS.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
