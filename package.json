@@ -2,9 +2,10 @@
   "name": "wdd331-portfolio",
   "version": "1.0.0",
   "description": "Portfolio site for BYU–I class WDD331: Advanced CSS.",
-  "main": "index.html",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "parcel",
+     "build": "parcel build"
   },
   "keywords": [],
   "author": "Caleb Wolfe",
@@ -14,5 +15,8 @@
     "backbone": "^1.6.1",
     "jquery": "^4.0.0",
     "underscore": "^1.13.8"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
   }
 }

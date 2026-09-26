@@ -13,4 +13,5 @@ every push to main via an Actions workflow provided for the class.
 
 ## Pages
 
-- [Home](index.html)
+- [Home](./index.html)
+- [Unit-1: Custom Properties](./units/unit-1/custom-properties/index.html)
