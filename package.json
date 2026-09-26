@@ -9,5 +9,10 @@
   "keywords": [],
   "author": "Caleb Wolfe",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "backbone": "^1.6.1",
+    "jquery": "^4.0.0",
+    "underscore": "^1.13.8"
+  }
 }
