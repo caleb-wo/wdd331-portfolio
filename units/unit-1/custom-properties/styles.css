@@ -1,0 +1,224 @@
+/* ========================================
+   TOKENS
+   Define your design decisions here.
+   Everything else in this file should
+   reference these tokens with var().
+   ======================================== */
+:root {
+    --color-pry: #5c2a3a;
+    --color-bg: #f6ede2;
+    --color-txt: #2f2420;
+    --color-acc: #c1622f;
+    --color-card-bg: #fffaf2;
+    --color-muted: #7a6a5f;
+
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 3rem;
+
+    --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-full: 9999px;
+}
+
+/* ========================================
+   RESET
+   A minimal reset so you start clean.
+   ======================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   BASE STYLES
+   Style the body, links, and any raw
+   HTML elements here. Use nesting.
+   ======================================== */
+body {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    color: var(--color-txt);
+    background-color: var(--color-bg);
+    line-height: var(--line-height-base);
+    padding: clamp(var(--space-sm), 4vw, var(--space-lg));
+
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--color-pry);
+    }
+
+    p {
+        color: var(--color-txt);
+    }
+
+    a {
+        color: var(--color-acc);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-pry);
+            text-decoration: underline;
+        }
+    }
+}
+
+/* ========================================
+   NAVIGATION
+   Style .site-nav so students can get
+   back to the homepage.
+   ======================================== */
+.site-nav {
+    padding: var(--space-sm) 0;
+    margin-bottom: var(--space-md);
+
+    a {
+        font-weight: 600;
+    }
+}
+
+/* ========================================
+   BOARD HEADER
+   Style the page header area.
+   ======================================== */
+.board-header {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md) var(--space-sm);
+
+    h1 {
+        font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3.5rem);
+        margin-bottom: var(--space-sm);
+    }
+
+    p {
+        color: var(--color-muted);
+        margin-bottom: 1.25rem;
+    }
+}
+
+/* ========================================
+   CARD GROUP
+   Each section of cards (This Week,
+   Coming Up, Announcements).
+   ======================================== */
+.card-group {
+    margin-bottom: var(--space-lg);
+
+    h2 {
+        width: 100%;
+        background-color: var(--color-pry);
+        color: var(--color-bg);
+        border-radius: var(--radius-md);
+        text-align: center;
+        padding: var(--space-sm);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+}
+
+/* ========================================
+   CARDS GRID
+   Layout the .cards container as a
+   responsive grid or flex layout.
+   ======================================== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: calc(var(--space-sm) * 1.5);
+    padding: var(--space-md) 0;
+}
+
+/* ========================================
+   INDIVIDUAL CARD
+   Style each .card article. This is where
+   most of your nesting will happen.
+   ======================================== */
+.card {
+    background-color: var(--color-card-bg, white);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+
+    .card-tag {
+        align-self: flex-start;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 0.25rem 0.75rem;
+        background-color: var(--color-acc);
+        color: var(--color-bg);
+        border-radius: var(--radius-full);
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        color: var(--color-pry);
+    }
+
+    p {
+        color: var(--color-txt);
+        flex-grow: 1;
+    }
+
+    .card-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid var(--color-muted);
+        padding-top: var(--space-sm);
+        font-size: 0.9rem;
+
+        span {
+            color: var(--color-muted);
+        }
+
+        a {
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/* ========================================
+   FOOTER
+   Style the .board-footer at the bottom.
+   ======================================== */
+.board-footer {
+    text-align: center;
+    padding: var(--space-md) var(--space-sm);
+    color: var(--color-muted);
+    border-top: 1px solid var(--color-pry);
+    margin-top: var(--space-lg);
+}
+
+
+/* (I always add a section like this if I use AI.)
+* [AI Usage]
+* I did the assignment on my own **first**. Then I fed my code into AI
+* for pointers, neat improvements, & learning. Some examples of items I
+* added after supplementing my code with AI are a better color scheme and
+* small touch ups like `letter-spacing`. I also had it format my code
+* for me, since my editor's indentation was smaller than the code from
+* the starter template.
+*
+* I've determined I need to work on my 'eye for design.' I can code CSS,
+* but I struggle to know what 'looks good.' That was one of the main things
+* I went over with AI.
+* */
