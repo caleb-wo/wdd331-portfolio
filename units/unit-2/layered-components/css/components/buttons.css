@@ -1,0 +1,9 @@
+/* Button components: .btn, .primary, .secondary, disabled state
+   Use native nesting for pseudo-classes and modifiers. */
+
+/* TODO: Style the button components */
+
+button {
+   border-radius: var(--radius-pill);
+   padding: 10px 24px;
+}
