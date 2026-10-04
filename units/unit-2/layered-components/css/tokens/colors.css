@@ -1,0 +1,29 @@
+/* Color tokens: define all color values for the site.
+   Name by purpose (--color-primary, --color-surface)
+   not appearance (--blue, --light-gray). */
+:root {
+    /* TODO: Define color tokens here */
+   --base-50: #f8fafc;
+   --base-100: #f1f5f9;
+   --base-300: #cbd5e1;
+   --base-700: #334155;
+   --base-900: #0f172a;
+ 
+   --brand-100: #e0f2fe;
+   --brand-600: #0284c7;
+   --brand-700: #0369a1;
+ 
+   --red-500: #ef4444; /*For errors or alerts*/
+ 
+   --bg-canvas: var(--neutral-100);
+   --bg-surface: var(--neutral-50);
+   --border-muted: var(--neutral-300);
+   
+   --text-primary: var(--neutral-900);
+   --text-secondary: var(--neutral-700);
+ 
+   --action-primary: var(--brand-600);
+   --action-primary-hover: var(--brand-700);
+   
+   --status-error: var(--red-500);
+}
