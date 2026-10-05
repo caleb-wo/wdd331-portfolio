@@ -2,28 +2,37 @@
    Name by purpose (--color-primary, --color-surface)
    not appearance (--blue, --light-gray). */
 :root {
-    /* TODO: Define color tokens here */
    --base-50: #f8fafc;
    --base-100: #f1f5f9;
    --base-300: #cbd5e1;
    --base-700: #334155;
    --base-900: #0f172a;
- 
+
    --brand-100: #e0f2fe;
    --brand-600: #0284c7;
    --brand-700: #0369a1;
- 
-   --red-500: #ef4444; /*For errors or alerts*/
- 
-   --bg-canvas: var(--neutral-100);
-   --bg-surface: var(--neutral-50);
-   --border-muted: var(--neutral-300);
-   
-   --text-primary: var(--neutral-900);
-   --text-secondary: var(--neutral-700);
- 
-   --action-primary: var(--brand-600);
-   --action-primary-hover: var(--brand-700);
-   
-   --status-error: var(--red-500);
+
+   --amber-100: #fef3c7;
+   --amber-800: #92400e;
+   --green-100: #dcfce7;
+   --green-800: #166534;
+
+   --color-bg: var(--base-100);
+   --color-surface: var(--base-50);
+   --color-border: var(--base-300);
+
+   --color-text: var(--base-900);
+   --color-text-muted: var(--base-700);
+
+   --color-primary: var(--brand-600);
+   --color-primary-hover: var(--brand-700);
+   --color-on-primary: var(--base-50);
+   --color-accent: var(--brand-100);
+   --color-accent-text: var(--brand-700);
+   --color-focus: var(--brand-700);
+
+   --color-status-open-bg: var(--green-100);
+   --color-status-open-text: var(--green-800);
+   --color-status-pending-bg: var(--amber-100);
+   --color-status-pending-text: var(--amber-800);
 }
