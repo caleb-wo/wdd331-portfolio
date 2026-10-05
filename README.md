@@ -15,3 +15,4 @@ every push to main via an Actions workflow provided for the class.
 
 - [Home](./index.html)
 - [Unit-1: Custom Properties](./units/unit-1/custom-properties/index.html)
+- [Unit-2: Layered Components](./units/unit-2/layered-components/index.html)
