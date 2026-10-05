@@ -2,37 +2,44 @@
    No classes here, only bare HTML element selectors.
    Reference tokens with var(). */
 
-/* TODO: Style body, headings, links, and other base elements */
+body {
+   background-color: var(--color-bg);
+   color: var(--color-text);
+   font-family: var(--font-family);
+   font-size: var(--text-base);
+   line-height: var(--lines-normal);
+}
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
    font-family: var(--font-title);
    font-weight: var(--font-bold);
    line-height: var(--lines-title);
 }
-p, span, a, text{
-   font-family: var(--font-text);
-   line-height: var(--lines-normal);
-}
-div:has(p, span, a){
-   font-family: var(--font-text);
-   line-height: var(--lines-normal);
+
+h1 {
+   font-size: var(--text-xl);
 }
 
-nav {
-   display:  flex;
+h2 {
+   font-size: var(--text-lg);
+   margin-bottom: var(--space-md);
 }
 
-ul {
-   list-style:  none;
-   padding: 0;
-   margin: 0;
-}
+a {
+   color: var(--color-primary);
 
-div:has(article) {
-   margin: 5vh 10vw 10vh 10vw;
-
-   article {
-      p {text-align: justify}
+   &:hover {
+      color: var(--color-primary-hover);
+      text-decoration: underline;
    }
 }
 
+nav {
+   display: flex;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}

@@ -2,4 +2,14 @@
    These live in the last layer so they override components
    by layer order without needing !important. */
 
-/* TODO: Add any utility classes you find useful */
+.text-muted {
+   color: var(--color-text-muted);
+}
+
+.text-center {
+   text-align: center;
+}
+
+.no-wrap {
+   white-space: nowrap;
+}
