@@ -4,8 +4,7 @@
   "description": "Portfolio site for BYU–I class WDD331: Advanced CSS.",
   "source": "index.html",
   "scripts": {
-     "start": "parcel",
-     "build": "parcel build"
+    "build": "lightningcss --bundle --minify --targets \">= 0.25%\" css/main.css -o dist/styles.css"
   },
   "keywords": [],
   "author": "Caleb Wolfe",
@@ -17,6 +16,7 @@
     "underscore": "^1.13.8"
   },
   "devDependencies": {
+    "lightningcss-cli": "^1.33.0",
     "parcel": "^2.16.4"
   }
 }
