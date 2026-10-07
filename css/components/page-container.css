@@ -1,0 +1,43 @@
+.page-container:has(input[value="layout"]:checked) li[data-tag~="layout"],
+.page-container:has(input[value="styling"]:checked) li[data-tag~="styling"] {
+  background-color: var(--color-highlight);
+  border-radius: 20px;
+  border: 2px dotted var(--color-highlight-border);
+}
+
+.tag-filters {
+  padding: var(--space-sm);
+  padding-left: 0;
+  margin-bottom: var(--space-md);
+  border: none;
+
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #999;
+    border-radius: 50%;
+    display: inline-grid;
+    place-content: center;
+    cursor: pointer;
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.15s ease-in-out;
+    background: var(--color-primary);
+  }
+
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+  input[type="radio"]:checked {
+    border-color: var(--color-primary);
+  }
+}

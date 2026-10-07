@@ -1,6 +1,8 @@
 :root {
-    --color-bg: #f4f6f8;
-    --color-text: #1e293b;
-    --color-primary: #006eb6;
-    --color-primary-hover: #004f7f;
+  --color-bg: #f4f6f8;
+  --color-text: #1e293b;
+  --color-primary: #006eb6;
+  --color-primary-hover: #004f7f;
+  --color-highlight: color-mix(in srgb, var(--color-primary) 12%, white);
+  --color-highlight-border: color-mix(in srgb, var(--color-primary) 35%, white);
 }

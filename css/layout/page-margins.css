@@ -1,0 +1,4 @@
+main {
+  margin-inline: clamp(1rem, 5vw, 4rem);
+  margin-block: 0;
+}
