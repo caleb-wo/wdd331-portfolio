@@ -2,6 +2,6 @@
     --space-sm: 0.5rem;
     --space-md: 1rem;
     --space-lg: 2rem;
-    --font-body: sans-serif, system-ui, -apple-system;
-    --font-heading: system-ui, serif, -apple-system;
+    --font-body: "Roboto", sans-serif, system-ui, -apple-system;
+    --font-heading: "Google Sans", system-ui, serif, -apple-system;
 }
