@@ -16,7 +16,7 @@
     -webkit-appearance: none;
     width: 1.25em;
     height: 1.25em;
-    border: 2px solid #999;
+    border: 2px solid var(--color-border-strong);
     border-radius: 50%;
     display: inline-grid;
     place-content: center;
@@ -30,7 +30,7 @@
     border-radius: 50%;
     transform: scale(0);
     transition: transform 0.15s ease-in-out;
-    background: var(--color-primary);
+    background: var(--color-accent);
   }
 
   input[type="radio"]:checked::before {
@@ -38,6 +38,6 @@
   }
 
   input[type="radio"]:checked {
-    border-color: var(--color-primary);
+    border-color: var(--color-accent);
   }
 }

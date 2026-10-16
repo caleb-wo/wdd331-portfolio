@@ -7,16 +7,17 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-link);
 
   &:hover {
-    color: var(--color-primary-hover);
+    color: var(--color-link-hover);
   }
 }
 
 hr {
   margin-inline: 0;
   margin-block: var(--space-lg);
+  border-color: var(--color-border);
 }
 
 h1,

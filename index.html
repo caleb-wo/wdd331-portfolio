@@ -9,11 +9,35 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="dist/styles.css">
+    <script src="js/theme-preference.js"></script>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <main>
-      <header></header>
+      <header>
+        <details class="theme-menu">
+          <summary class="theme-control">
+            <span class="visually-hidden">Color scheme</span>
+          </summary>
+          <div class="theme-extra" role="group" aria-label="Choose color scheme">
+            <label class="theme-control theme-pick" data-theme-pick="light">
+              <input name="theme-preference" type="radio" value="light">
+              <span aria-hidden="true">☀</span>
+              <span class="visually-hidden">Light</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="system">
+              <input name="theme-preference" type="radio" value="system" checked>
+              <span aria-hidden="true">⚙</span>
+              <span class="visually-hidden">System default</span>
+            </label>
+            <label class="theme-control theme-pick" data-theme-pick="dark">
+              <input name="theme-preference" type="radio" value="dark">
+              <span aria-hidden="true">☾</span>
+              <span class="visually-hidden">Dark</span>
+            </label>
+          </div>
+        </details>
+      </header>
       <h1 class="text-center">WDD 331R: Advanced CSS</h1>
       <div id="introduction">
         <p>My name is <strong>Caleb Wolfe</strong>, and I'm a senior at BYU–Idaho. I'm studying Software Engineering. This site will act as a portfolio for the class <strong>WDD 331R</strong>.</p>
