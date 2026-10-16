@@ -12,6 +12,9 @@ The CSS is built using [LightningCSS](https://lightningcss.dev/) with [pnpm](htt
 
 To build the css, simple run `pnpm build`. This fires off a script in [package.json](./package.json).
 
+### Latest
+Added dark and light mode support to the site. Also refactored using more idiomatic custom color components, especially with relative color syntax. You can see the overhauled colored tokens at [css/tokens/colors.css](./css/tokens/colors.css)
+
 ## Pages
 
 - [Home](./index.html)
