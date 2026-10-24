@@ -11,5 +11,6 @@
 @import url('components/page-container.css') layer(components);
 @import url('components/theme-toggle.css') layer(components);
 @import url('components/effects.css') layer(components);
+@import url('components/site-nav.css') layer(components);
 
 @import url('utilities/utilities.css') layer(utilities);
