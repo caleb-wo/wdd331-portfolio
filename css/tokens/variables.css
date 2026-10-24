@@ -17,6 +17,15 @@
 
   --transition-base: 0.2s ease;
 
+  --shadow-card:
+    0 1px 2px var(--shadow-color),
+    0 4px 8px var(--shadow-color),
+    0 12px 24px var(--shadow-color);
+  --shadow-raised:
+    0 4px 8px var(--shadow-color),
+    0 12px 24px var(--shadow-color),
+    0 24px 48px var(--shadow-color);
+
   --icon-size-sm: 24px;
   --icon-size-md: 32px;
 

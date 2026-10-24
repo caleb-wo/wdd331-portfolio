@@ -20,3 +20,4 @@ Added dark and light mode support to the site. Also refactored using more idioma
 - [Home](./index.html)
 - [Unit-1: Custom Properties](./units/unit-1/custom-properties/index.html)
 - [Unit-2: Layered Components](./units/unit-2/layered-components/index.html)
+- [Unit-3: Visual Effects](./units/unit-3/visual-effects/index.html)
