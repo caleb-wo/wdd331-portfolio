@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Demo</title>
+    <script src="../../../js/theme-preference.js"></script>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="container-demo.css">
+</head>
+<body class="container-page">
+
+    <h1>Container Query Demo</h1>
+    <button class="info-btn" popovertarget="info-tip">What is this?</button>
+    <div id="info-tip" popover>The same card adapts to the width of its container.</div>
+
+    <div class="layout">
+        <aside class="zone">
+            <article class="feature-card">
+                <img src="https://picsum.photos/seed/cq-1/400/250" alt="">
+                <div>
+                    <h2>Sidebar Card</h2>
+                    <p>This card sits in a narrow container, so it stacks.</p>
+                </div>
+            </article>
+        </aside>
+
+        <main class="zone">
+            <article class="feature-card">
+                <img src="https://picsum.photos/seed/cq-2/400/250" alt="">
+                <div>
+                    <h2>Main Card</h2>
+                    <p>This card sits in a wide container, so it shifts to a horizontal arrangement.</p>
+                </div>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>
