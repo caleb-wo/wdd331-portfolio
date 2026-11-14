@@ -1,9 +1,26 @@
 :root {
   --font-family-sans: system-ui, sans-serif;
   --font-family-mono: monospace;
-  --font-size-sm: 1.4rem;
-  --font-size-md: 1.6rem;
-  --font-size-lg: 1.8rem;
+  --font-family-body: "Open Sans", var(--font-family-sans), -apple-system;
+  --font-family-heading: "Roboto", var(--font-family-sans), -apple-system;
+
+  --font-size-xs: 0.8rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: clamp(1rem, 0.2273vw + 0.9545rem, 1.125rem);
+  --font-size-lg: clamp(1.25rem, 0.4545vw + 1.1591rem, 1.5rem);
+  --font-size-xl: clamp(1.5625rem, 0.7955vw + 1.4034rem, 2rem);
+  --font-size-2xl: clamp(1.9531rem, 0.9943vw + 1.7543rem, 2.5rem);
+
+  --line-height-body: 1.6;
+  --line-height-heading: 1.2;
+  --line-height-display: 1.1;
+
+  --font-size-caption: var(--font-size-xs);
+  --font-size-body-sm: var(--font-size-sm);
+  --font-size-body: var(--font-size-md);
+  --font-size-heading-sm: var(--font-size-lg);
+  --font-size-heading-lg: var(--font-size-xl);
+  --font-size-display: var(--font-size-2xl);
 
   --spacing-xs: 4px;
   --spacing-sm: 8px;
@@ -34,6 +51,6 @@
   --space-sm: var(--spacing-sm);
   --space-md: var(--spacing-md);
   --space-lg: var(--spacing-xl);
-  --font-body: "Open Sans", var(--font-family-sans), -apple-system;
-  --font-heading: "Roboto", var(--font-family-sans), -apple-system;
+  --font-body: var(--font-family-body);
+  --font-heading: var(--font-family-heading);
 }
