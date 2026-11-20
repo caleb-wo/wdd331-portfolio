@@ -1,6 +1,5 @@
 :root {
   --font-family-sans: system-ui, sans-serif;
-  --font-family-mono: monospace;
   --font-family-body: "Open Sans", var(--font-family-sans), -apple-system;
   --font-family-heading: "Roboto", var(--font-family-sans), -apple-system;
 
@@ -29,7 +28,6 @@
   --spacing-xl: 32px;
 
   --radius-sm: 4px;
-  --radius-md: 6px;
   --radius-lg: 8px;
 
   --transition-base: 0.2s ease;
@@ -48,9 +46,4 @@
 
   --outline-width: 2px;
 
-  --space-sm: var(--spacing-sm);
-  --space-md: var(--spacing-md);
-  --space-lg: var(--spacing-xl);
-  --font-body: var(--font-family-body);
-  --font-heading: var(--font-family-heading);
 }

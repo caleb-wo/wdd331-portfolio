@@ -24,3 +24,4 @@ Added dark and light mode support to the site. Also refactored using more idioma
 - Unit-4: Grid Layout for [Editorial](./units/unit-4/grid-layouts/editorial.html) and [Cards](./units/unit-4/grid-layouts/cards.html)
 - Unit-4 Advanced: [Container Queries](./units/unit-4/advanced/container-demo.html) and [Sticky](./units/unit-4/advanced/sticky-demo.html)
 - Unit-5: [Typography Tokens](./css/tokens/variables.css) with Open Sans and Roboto
+- [Resume](./units/unit-5/resume/index.html) (with [Print CSS](./css/print.css)) & [Contact](./units/unit-5/resume/contact.html)
