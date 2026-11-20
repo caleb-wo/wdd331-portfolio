@@ -1,7 +1,7 @@
 .articles-page .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
-  gap: var(--space-md);
+  gap: var(--spacing-md);
 }
 
 .articles-page .card {
@@ -24,8 +24,8 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: var(--space-sm);
-  padding: var(--space-md);
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
 }
 
 .articles-page .card p {
@@ -53,7 +53,7 @@
     display: grid;
     grid-row: span 4;
     grid-template-rows: subgrid;
-    margin-block-end: var(--space-md);
+    margin-block-end: var(--spacing-md);
   }
 
   .articles-page .card > div {

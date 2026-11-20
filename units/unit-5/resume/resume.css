@@ -1,0 +1,101 @@
+.resume-page .site-nav,
+.resume-page .brand-header,
+.resume-page main {
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.resume-page .site-nav {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.resume-page .brand-header {
+  background: linear-gradient(
+    to bottom right,
+    var(--header-bg),
+    color-mix(in oklch, var(--header-bg) 75%, black)
+  );
+  color: var(--header-text);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  margin-block: var(--spacing-md);
+  box-shadow: var(--shadow-card);
+}
+
+.resume-page .brand-header p {
+  max-width: none;
+  margin-block-end: var(--spacing-xs);
+}
+
+.resume-page .brand-header p:last-child {
+  margin-block-end: 0;
+  font-size: var(--font-size-body-sm);
+}
+
+.resume-page .brand-header a {
+  color: var(--header-text);
+  text-decoration-color: color-mix(in srgb, var(--header-text) 50%, transparent);
+}
+
+.resume-page main {
+  padding: var(--spacing-xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  margin-block-end: var(--spacing-xl);
+}
+
+.resume-page section + section {
+  margin-block-start: var(--spacing-xl);
+}
+
+.resume-page h2 {
+  padding-block-end: var(--spacing-xs);
+  margin-block-end: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.resume-page .resume-entry {
+  padding-inline-start: var(--spacing-md);
+  border-inline-start: 2px solid var(--color-border-strong);
+}
+
+.resume-page .resume-entry + .resume-entry {
+  margin-block-start: var(--spacing-lg);
+}
+
+.resume-page .meta {
+  font-size: var(--font-size-body-sm);
+  color: var(--color-text-muted);
+  margin-block-end: var(--spacing-sm);
+}
+
+.resume-page ul {
+  padding-inline-start: var(--spacing-md);
+}
+
+.resume-page li + li {
+  margin-block-start: var(--spacing-xs);
+}
+
+.resume-page dl {
+  display: grid;
+  grid-template-columns: fit-content(14rem) 1fr;
+  gap: var(--spacing-sm) var(--spacing-lg);
+}
+
+.resume-page dt {
+  margin-top: 0;
+}
+
+@media (max-width: 40rem) {
+  .resume-page dl {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xs);
+  }
+
+  .resume-page dd {
+    margin-block-end: var(--spacing-sm);
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Contact — Caleb Wolfe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <script src="../../../js/theme-preference.js"></script>
+    <link rel="stylesheet" href="../../../css/main.css">
+</head>
+<body>
+
+    <nav class="site-nav">
+        <a href="../../../index.html">&larr; Home</a>
+        <ul>
+            <li><a href="index.html">Resume</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact</h1>
+        <form action="#" method="post">
+            <label for="contact-name">
+                Name
+                <input type="text" id="contact-name" name="name" required>
+            </label>
+            <label for="contact-email">
+                Email
+                <input type="email" id="contact-email" name="email" required>
+            </label>
+            <label for="contact-message">
+                Message
+                <textarea id="contact-message" name="message" required></textarea>
+            </label>
+            <label for="contact-subscribe">
+                <input type="checkbox" id="contact-subscribe" name="subscribe" checked>
+                Subscribe to updates
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+</body>
+</html>
